@@ -13,11 +13,23 @@ const EventsRouter = require("./Router/EventsRouter");
 const demographicdataRouter = require("./Router/demographicdataRouter");
 const ActiveSchemeRouter = require("./Router/ActiveSchemeRouter");
 
+<<<<<<< HEAD
 const AddSchemeRouter = require("./Router/AddSchemeRouter")
 const AddnewlocationDataRouter = require("./Router/AddnewlocationDataRouter")
 const GetSchemeRouter = require("./Router/GetSchemeRouter");
 const AccountsData = require("./Router/Accountsdata");
 const recommendations = require("./Router/recommendations");
+=======
+const AddSchemeRouter = require("./Router/AddSchemeRouter");
+const AddnewlocationDataRouter = require("./Router/AddnewlocationDataRouter");
+const GetSchemeRouter = require("./Router/GetSchemeRouter");
+const GetRegionRouter = require("./Router/GetRegionRouter");
+const AccountsData = require("./Router/AccountsData");
+const AccountPredictionRouter = require("./Router/AccountPredictionRouter");
+const TrackRouter = require("./Router/TrackRouter");
+const UpdateAccountRouter = require("./Router/IncreaseAccount");
+const deminiRouter = require("./Router/newgeminii");
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 require("./model/db")
@@ -37,9 +49,19 @@ app.use("/ActiveScheme" ,ActiveSchemeRouter);
 app.use('/Addscheme' , AddSchemeRouter);
 app.use('/AddnewlocationData' ,AddnewlocationDataRouter )
 app.use("/getScheme" , GetSchemeRouter);
+<<<<<<< HEAD
 app.use("/accounts",AccountsData)
 
 app.use("/location",recommendations)
+=======
+app.use("/getregion" , GetRegionRouter);
+app.use("/accounts" , AccountsData);
+app.use("/PredictAccount" , AccountPredictionRouter)
+app.use("/addTrack" , TrackRouter)
+app.use("/updateAccountByOne" , UpdateAccountRouter);
+app.use("/analyseGemini" , deminiRouter);
+
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
 
 const Port = process.env.PORT || 3000;
 app.listen(Port, () => {

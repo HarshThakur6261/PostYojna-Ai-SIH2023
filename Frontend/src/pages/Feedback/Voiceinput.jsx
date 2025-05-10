@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Voiceinput = () => {
   const [prompt, Setprompt] = useState({});
   const [text, setText] = useState("");
-  const [location, setlocation] = useState("");
+  
   const [scheme, setscheme] = useState("");
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef(null);
@@ -24,12 +24,12 @@ const Voiceinput = () => {
 
   const handleRating = (newRating) => {
     setRating(newRating);
-    console.log("Selected rating:", newRating); // You can send this to the backend
+    console.log("Selected rating:", newRating); 
   };
-  // const [feedbackType, setFeedbackType] = useState("");
+
   const [userCategory, setUserCategory] = useState("");
   const [dis, Setdis] = useState('');
-  // const feedbackTypes = ["Suggestion", "Complaint", "Inquiry", "Appreciation"];
+
   const userCategories = ["Visitor", "Official", "Stakeholder", "Other"];
 
   const indianLanguages = [
@@ -353,20 +353,3 @@ export default Voiceinput;
 
 
 
-
-// const schemes = [
-//   "Post Office Savings Account",
-//   "Post Office Recurring Deposit Account",
-//   "Post Office Time Deposit Account",
-//   "Post Office Monthly Income Scheme",
-//   "Senior Citizen Savings Scheme",
-//   "Public Provident Fund",
-//   "Sukanya Samriddhi Yojana",
-//   "Postal Life Insurance",
-//   "Rural Postal Life Insurance",
-//   "National Savings Certificate",
-//   "Kisan Vikas Patra",
-//   "Fixed Deposits",
-//   "Recurring Deposits",
-//   "Mahila Samman Savings Certificate"
-// ];

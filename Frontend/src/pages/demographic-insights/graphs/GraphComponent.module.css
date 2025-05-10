@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .pageContainer {
   height: 100vh;
   margin-left: 270px;
@@ -112,6 +113,62 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+=======
+/* Dropdown.module.css */
+
+/* Container for the whole form */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+/* Style for both the category and options dropdown */
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+/* Hover and focus styles for the dropdown */
+select:hover, select:focus {
+  border-color: #007bff;
+  background-color: #e9f7ff;
+}
+
+/* Style for the placeholder option */
+option {
+  color: #777;
+}
+
+/* Style for the selected value display */
+p {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style for the submit button */
+.submitButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
 }
 
 .schemeDetails h3 {

@@ -29,6 +29,7 @@ const AddScheme = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name.startsWith("age_")) {
+<<<<<<< HEAD
       const key = name.split("_")[1];
       setFormData((prevState) => ({
         ...prevState,
@@ -62,6 +63,20 @@ const AddScheme = () => {
     });
 
     return errors;
+=======
+      // Handle nested target_age_group values
+      const key = name.split("_")[1];
+      setFormData({
+        ...formData,
+        target_age_group: {
+          ...formData.target_age_group,
+          [key]: value,
+        },
+      });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
   };
 
   const handleSubmit = async (e) => {
@@ -161,7 +176,11 @@ const AddScheme = () => {
             <input
               type="number"
               name="age_young"
+<<<<<<< HEAD
               value={formData.target_age_group.young}
+=======
+              value={formData.target_age_group.young || ""}
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
               onChange={handleChange}
               required
               min="0"
@@ -173,7 +192,11 @@ const AddScheme = () => {
             <input
               type="number"
               name="age_youth"
+<<<<<<< HEAD
               value={formData.target_age_group.youth}
+=======
+              value={formData.target_age_group.youth || ""}
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
               onChange={handleChange}
               required
               min="0"
@@ -185,7 +208,11 @@ const AddScheme = () => {
             <input
               type="number"
               name="age_adult"
+<<<<<<< HEAD
               value={formData.target_age_group.adult}
+=======
+              value={formData.target_age_group.adult || ""}
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
               onChange={handleChange}
               required
               min="0"
@@ -197,7 +224,11 @@ const AddScheme = () => {
             <input
               type="number"
               name="age_senior_citizen"
+<<<<<<< HEAD
               value={formData.target_age_group.senior_citizen}
+=======
+              value={formData.target_age_group.senior_citizen || ""}
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
               onChange={handleChange}
               required
               min="0"

@@ -12,8 +12,7 @@ function App() {
 
   return (
     <>
-     {/* <Sidebar/>
-     <Header/> */}
+    
      <Outlet/>
     </>
   )
