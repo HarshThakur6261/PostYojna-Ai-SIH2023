@@ -149,9 +149,9 @@ function Login() {
             </button>
           </form>
 
-          <div className={styles.signupPrompt}>
+          {/* <div className={styles.signupPrompt}>
             Don't have an account? <a href="#" className={styles.signupLink}>Create account!</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <ToastContainer />

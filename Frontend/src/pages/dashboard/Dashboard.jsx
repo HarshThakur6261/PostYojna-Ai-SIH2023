@@ -1,30 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { ResponsivePie } from "@nivo/pie"; // For the pie chart
+
 import styles from "./Dashboard.module.css"; // Import the CSS module
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
-import HashLoader from "react-spinners/HashLoader";
-import {
-  Chart as ChartJS,
-  ArcElement, // Required for Pie Chart
-  LineElement, // Required for Line Chart
-  CategoryScale, // X-axis scale
-  LinearScale, // Y-axis scale
-  PointElement, // Points on Line Chart
-  Tooltip, // Tooltip plugin
-  Legend, // Legend plugin
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import { Pie } from "react-chartjs-2";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaUsers, FaChartLine, FaUserPlus, FaDollarSign } from "react-icons/fa"; // Import the icons
+
+import { FaUsers, FaChartLine, FaUserPlus} from "react-icons/fa"; // Import the icons
 import { BiRupee } from "react-icons/bi";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+
 import "react-circular-progressbar/dist/styles.css";
 import DashboardBarChart from "./DashboardLineChart";
 import CountUp from "react-countup";
-import CylindricalColumn from "../demographic-insights/graphs/charts/CylindricalColumn";
-import CylindricalColumnDashboard from "./DashboardLineChart";
+
 
 import ReactStars from "react-rating-stars-component";
 
@@ -229,13 +215,7 @@ const Dashboard = () => {
             <div className={styles.progresschartHeader}>
               <h6>Account Registration Trends</h6>
               <div className={styles.buttons}>
-                <button
-                  className={`${styles.button} ${selectedView === "Monthly" ? styles.activeButton : ""
-                    }`}
-                  onClick={() => setSelectedView("Monthly")}
-                >
-                  Monthly
-                </button>
+                
                 <button
                   className={`${styles.button} ${selectedView === "Yearly" ? styles.activeButton : ""
                     }`}
