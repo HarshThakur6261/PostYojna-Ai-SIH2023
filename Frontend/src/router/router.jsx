@@ -13,9 +13,13 @@ import Home from "../pages/Home";
 import PersonalizedRecommendations from "../pages/Personalized-recommendations/PersonalizedRecommendations";
 import Aiprediction from "../pages/Aiprediction/Aiprediction";
 import PredictAccountOpening from "../pages/PredictAccountOpening";
+<<<<<<< HEAD
 import Recommendations from "../pages/Feedback/recommendations/Recommendations";
 import RecommendationPage from "../pages/demographic-insights/graphs/RecommendationPage";
 import Results from "../pages/Personalized-recommendations/Results";
+=======
+import Track from "../pages/Track";
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
 
 const router = createBrowserRouter([
   {
@@ -75,6 +79,7 @@ const router = createBrowserRouter([
             element:<Aiprediction></Aiprediction>
           },
           {
+<<<<<<< HEAD
             path:"Predict",
             element:<PredictAccountOpening/>
           },
@@ -82,6 +87,16 @@ const router = createBrowserRouter([
             path:"demographic-insights/maps/recommendations",
             element:<RecommendationPage/>
           }
+=======
+            path:"PredictAccountOpening",
+            element:<PredictAccountOpening></PredictAccountOpening>
+          },
+          {
+            path:"Track",
+            element:<Track></Track>
+          },
+
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
         ],
       },
     ],

@@ -69,6 +69,7 @@ const Sidebar = () => {
             Calendar
           </Link>
           <Link
+<<<<<<< HEAD
         to="/Home/Feedback"
         className={`${styles.navItem} ${
           location.pathname === "/Home/Feedback" ? styles.active : ""
@@ -86,6 +87,37 @@ const Sidebar = () => {
         <FaLightbulb   className={styles.icon} /> {/* Recommendations Icon */}
         Personalized Recommendations
       </Link>
+=======
+            to="/Home/Feedback"
+            className={`${styles.navItem} ${
+              location.pathname === "/Home/Feedback" ? styles.active : ""
+            }`}
+          >
+            
+            <Menu className={styles.icon} />
+            Feedback
+          </Link>
+          <Link
+            to="/Home/PredictAccountOpening"
+            className={`${styles.navItem} ${
+              location.pathname === "/Home/PredictAccountOpening" ? styles.active : ""
+            }`}
+          >
+            
+            <Menu className={styles.icon} />
+            PredictAccountOpening
+          </Link>
+          <Link
+            to="/Home/Track"
+            className={`${styles.navItem} ${
+              location.pathname === "/Home/Track" ? styles.active : ""
+            }`}
+          >
+            
+            <Menu className={styles.icon} />
+            Track
+          </Link>
+>>>>>>> ac5611c5ac4991b8a7c40783a236ec5d906a7450
         </div>
       </nav>
 
